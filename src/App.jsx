@@ -19,10 +19,11 @@ function App() {
           className="menu-icon"
           src={`/assets/images/icon-menu${clicked ? "-close" : ""}.svg`}
           style={clicked ? { position: "fixed", display: "block" } : {}}
+          alt="three horizontal lines"
         />
         <nav
           onClick={() => setClicked(false)}
-          style={clicked ? { opacity: 1 } : { zIndex: -999}}
+          style={clicked ? { opacity: 1 } : { zIndex: -999 }}
           className="dark-background"
         >
           <div
@@ -31,7 +32,7 @@ function App() {
               e.stopPropagation();
             }}
             style={
-              clicked ? { transform: "scaleX(1)" } : { transform: "scaleX(0)"}
+              clicked ? { transform: "scaleX(1)" } : { transform: "scaleX(0)" }
             }
           >
             <div className="navbar-option">Home</div>
